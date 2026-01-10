@@ -1,0 +1,123 @@
+{
+	"Data": {
+		"brand": "ASG"
+	},
+	"Nav": {
+		"products": "Products",
+		"industries": "Industries",
+		"coverage": "Coverage",
+		"suppliers": "Suppliers",
+		"allies": "Allies",
+		"testimonials": "Testimonials",
+		"contact": "Contact",
+		"quote": "Request a quote"
+	},
+	"Hero": {
+		"kicker": "Industrial Supply & Distribution",
+		"title": "Industrial supplies across Latin America & the Caribbean.",
+		"subtitle": "Raw materials, industrial cleaning products, metals, and equipment. Competitive pricing, reliable sourcing, and timely delivery.",
+		"actions": {
+			"quote": "Request a quote",
+			"whatsapp": "WhatsApp",
+			"whatsappHref": "https://wa.me/0000000000"
+		},
+		"chips": [
+			"International coverage",
+			"Flexible Incoterms",
+			"Verified suppliers",
+			"Fast response times"
+		],
+		"capabilities": [
+			{
+				"key": "products",
+				"title": "Products",
+				"description": "Chemicals, metals, equipment, and industrial cleaning solutions."
+			},
+			{
+				"key": "coverage",
+				"title": "Coverage",
+				"description": "Latin America & the Caribbean, with a global supplier network."
+			},
+			{
+				"key": "logistics",
+				"title": "Logistics",
+				"description": "Flexible Incoterms and coordinated delivery for your timelines."
+			}
+		]
+	},
+	"Products": {
+		"kicker": "Products",
+		"title": "What we supply",
+		"subtitle": "A curated overview of our main categories. We source based on your specs and destination.",
+		"examplesLabel": "Representative items",
+		"note": "Need something specific? Request a quote and we’ll confirm availability.",
+		"categories": [
+			{
+				"key": "chemicals",
+				"title": "Basic chemicals",
+				"description": "Core inputs for industrial processes and operations.",
+				"examples": [
+					"Acids",
+					"Alkalis",
+					"Industrial salts",
+					"Oxidizers"
+				]
+			},
+			{
+				"key": "cleaning",
+				"title": "Industrial cleaning",
+				"description": "Professional-grade cleaning and hygiene solutions.",
+				"examples": [
+					"Detergents",
+					"Disinfectants",
+					"Degreasers",
+					"Sanitizers"
+				]
+			},
+			{
+				"key": "metals",
+				"title": "Metals",
+				"description": "Reliable sourcing for industrial and construction needs.",
+				"examples": [
+					"Steel",
+					"Aluminum",
+					"Coils",
+					"Sheets"
+				]
+			},
+			{
+				"key": "packaging",
+				"title": "Packaging & plastics",
+				"description": "Packaging formats and materials for supply chains.",
+				"examples": [
+					"Containers",
+					"Films",
+					"Industrial bags",
+					"Resins"
+				]
+			},
+			{
+				"key": "lubricants",
+				"title": "Oils & lubricants",
+				"description": "Fluids for industrial operation and maintenance.",
+				"examples": [
+					"Industrial oils",
+					"Greases",
+					"Hydraulic fluids",
+					"Coolants"
+				]
+			},
+			{
+				"key": "construction",
+				"title": "Construction materials",
+				"description": "Materials sourcing to support infrastructure and projects.",
+				"examples": [
+					"Cement",
+					"Aggregates",
+					"Bulk supply",
+					"Project sourcing"
+				]
+			}
+		]
+	}
+}

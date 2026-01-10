@@ -1,0 +1,123 @@
+{
+	"Data": {
+		"brand": "ASG"
+	},
+	"Nav": {
+		"products": "Productos",
+		"industries": "Industrias",
+		"coverage": "Cobertura",
+		"suppliers": "Proveedores",
+		"allies": "Aliados",
+		"testimonials": "Testimonios",
+		"contact": "Contacto",
+		"quote": "Solicitar cotización"
+	},
+	"Hero": {
+		"kicker": "Suministro y Distribución Industrial",
+		"title": "Suministros industriales en Latinoamérica y el Caribe.",
+		"subtitle": "Materias primas, productos de limpieza industrial, metales y equipos. Precios competitivos, abastecimiento confiable y entregas a tiempo.",
+		"actions": {
+			"quote": "Solicitar cotización",
+			"whatsapp": "WhatsApp",
+			"whatsappHref": "https://wa.me/0000000000"
+		},
+		"chips": [
+			"Cobertura internacional",
+			"Incoterms flexibles",
+			"Proveedores verificados",
+			"Respuesta rápida"
+		],
+		"capabilities": [
+			{
+				"key": "products",
+				"title": "Productos",
+				"description": "Químicos, metales, equipos y soluciones de limpieza industrial."
+			},
+			{
+				"key": "coverage",
+				"title": "Cobertura",
+				"description": "Latinoamérica y el Caribe, con red global de proveedores."
+			},
+			{
+				"key": "logistics",
+				"title": "Logística",
+				"description": "Incoterms flexibles y entregas coordinadas según tus tiempos."
+			}
+		]
+	},
+	"Products": {
+		"kicker": "Productos",
+		"title": "Lo que suministramos",
+		"subtitle": "Resumen curado de nuestras principales categorías. Abastecemos según especificaciones y destino.",
+		"examplesLabel": "Artículos representativos",
+		"note": "¿Necesitas algo específico? Solicita una cotización y confirmamos disponibilidad.",
+		"categories": [
+			{
+				"key": "chemicals",
+				"title": "Químicos básicos",
+				"description": "Insumos clave para procesos y operaciones industriales.",
+				"examples": [
+					"Ácidos",
+					"Álcalis",
+					"Sales industriales",
+					"Oxidantes"
+				]
+			},
+			{
+				"key": "cleaning",
+				"title": "Limpieza industrial",
+				"description": "Soluciones profesionales de higiene y limpieza.",
+				"examples": [
+					"Detergentes",
+					"Desinfectantes",
+					"Desengrasantes",
+					"Sanitizantes"
+				]
+			},
+			{
+				"key": "metals",
+				"title": "Metales",
+				"description": "Abastecimiento confiable para industria y construcción.",
+				"examples": [
+					"Acero",
+					"Aluminio",
+					"Rollos",
+					"Láminas"
+				]
+			},
+			{
+				"key": "packaging",
+				"title": "Empaque y plásticos",
+				"description": "Formatos y materiales de empaque para cadenas de suministro.",
+				"examples": [
+					"Contenedores",
+					"Películas",
+					"Sacos industriales",
+					"Resinas"
+				]
+			},
+			{
+				"key": "lubricants",
+				"title": "Aceites y lubricantes",
+				"description": "Fluidos para operación y mantenimiento industrial.",
+				"examples": [
+					"Aceites industriales",
+					"Grasas",
+					"Fluidos hidráulicos",
+					"Refrigerantes"
+				]
+			},
+			{
+				"key": "construction",
+				"title": "Materiales de construcción",
+				"description": "Abastecimiento de materiales para infraestructura y proyectos.",
+				"examples": [
+					"Cemento",
+					"Agregados",
+					"Volumen",
+					"Suministro por proyecto"
+				]
+			}
+		]
+	}
+}
