@@ -54,16 +54,16 @@ export async function ProductsSection() {
 				/>
 			</Reveal>
 
-			<div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+			<div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 				{categories.map((cat, i) => {
 					const Icon = ICONS[cat.key];
 
 					return (
 						<Reveal key={cat.key} delayMs={120 + i * 60}>
 							<SurfaceCard className="group">
-								<div className="relative p-6">
+								<div className="relative z-10 p-6">
 									<div className="flex items-start gap-3">
-										<div className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+										<div className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-inset ring-primary/15">
 											<Icon className="h-5 w-5" />
 										</div>
 
@@ -73,22 +73,20 @@ export async function ProductsSection() {
 										</div>
 									</div>
 
-									<div className="mt-5">
-										<div className="flex items-center justify-between">
-											<span className="text-xs font-medium text-muted-foreground">
-												{t("examplesLabel")}
-											</span>
-										</div>
+									<div className="mt-5 border-t border-border/60 pt-4">
+										<span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+											{t("examplesLabel")}
+										</span>
 
-										<div className="mt-2 flex flex-wrap gap-2">
+										<div className="mt-2 flex flex-wrap gap-1.5">
 											{cat.examples.map((ex) => (
 												<span
 													key={ex}
 													className={cn(
-														"inline-flex items-center rounded-md px-2.5 py-1 text-xs",
-														"bg-muted/70 text-foreground/80 ring-1 ring-inset ring-foreground/10",
-														"transition-colors",
-														"group-hover:ring-foreground/15"
+														"inline-flex items-center rounded-md px-2 py-0.5 text-[11px] leading-5",
+														"bg-muted/50 text-muted-foreground",
+														"ring-1 ring-inset ring-border/60",
+														"group-hover:text-foreground/80 group-hover:ring-border/80"
 													)}
 												>
 													{ex}

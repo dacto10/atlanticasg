@@ -85,7 +85,7 @@ export async function HeroSection() {
 						<Reveal key={cap.key} delayMs={320 + i * 90}>
 							<div className="rounded-2xl border border-foreground/10 bg-background/60 p-5 text-left shadow-sm">
 								<div className="flex items-start gap-3">
-									<div className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-foreground/10 bg-background">
+									<div className="mt-0.5 inline-flex p-2 items-center justify-center rounded-full border border-foreground/10 bg-background">
 										<Icon className="h-5 w-5 text-primary" />
 									</div>
 

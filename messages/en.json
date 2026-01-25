@@ -119,5 +119,203 @@
 				]
 			}
 		]
+	},
+	"Industries": {
+		"kicker": "Industries",
+		"title": "Industries we serve",
+		"subtitle": "Reliable sourcing for demanding operational environments.",
+		"items": [
+			{
+				"key": "agriculture",
+				"title": "Agriculture",
+				"description": "Inputs and materials for farming and processing."
+			},
+			{
+				"key": "food",
+				"title": "Food",
+				"description": "Packaging, sanitation, and production essentials."
+			},
+			{
+				"key": "pharma",
+				"title": "Pharmaceutical",
+				"description": "Traceable supplies aligned with strict requirements."
+			},
+			{
+				"key": "cosmetics",
+				"title": "Cosmetics",
+				"description": "Ingredients, packaging, and manufacturing supplies."
+			},
+			{
+				"key": "cleaning",
+				"title": "Industrial cleaning",
+				"description": "Chemicals and hygiene solutions for facilities."
+			},
+			{
+				"key": "marine",
+				"title": "Marine",
+				"description": "Maintenance supplies for ports and fleets."
+			},
+			{
+				"key": "construction",
+				"title": "Construction",
+				"description": "Materials and bulk sourcing for projects."
+			},
+			{
+				"key": "transport",
+				"title": "Transport",
+				"description": "Consumables and supplies for logistics operations."
+			},
+			{
+				"key": "energy",
+				"title": "Energy",
+				"description": "Industrial inputs for energy production and service."
+			}
+		]
+	},
+	"Coverage": {
+		"kicker": "Coverage",
+		"title": "Europe + the Americas",
+		"subtitle": "Sourcing and delivery support across cross-border supply chains.",
+		"stats": [
+			{
+				"value": "2 continents",
+				"label": "Europe and the Americas"
+			},
+			{
+				"value": "Cross-border",
+				"label": "Documentation and coordination"
+			},
+			{
+				"value": "Spec-based",
+				"label": "Sourcing to your requirements"
+			}
+		],
+		"regionsTitle": "Regions served",
+		"capabilitiesTitle": "How we deliver",
+		"regions": [
+			{
+				"key": "americas",
+				"title": "Americas",
+				"summary": "End-to-end support across the whole continent.",
+				"items": [
+					"North America",
+					"Central America",
+					"South America"
+				]
+			},
+			{
+				"key": "europe",
+				"title": "Europe",
+				"summary": "Operational coverage across key European markets.",
+				"items": [
+					"EU",
+					"UK",
+					"Neighboring markets"
+				]
+			}
+		],
+		"capabilities": [
+			{
+				"key": "docs",
+				"title": "Documentation & compliance",
+				"description": "Export docs, basic customs support, and shipment paperwork."
+			},
+			{
+				"key": "consolidation",
+				"title": "Consolidation & coordination",
+				"description": "Supplier sourcing, consolidation planning, and scheduling."
+			},
+			{
+				"key": "freight",
+				"title": "Freight options",
+				"description": "Sea, air, and multimodal depending on timeline and destination."
+			}
+		]
+	},
+	"Providers": {
+		"kicker": "Network",
+		"title": "Global sourcing network",
+		"subtitle": "We protect your supply with redundancy and multi-region sourcing, without exposing individual providers.",
+		"pillarsTitle": "How our network works",
+		"pillarsSubtitle": "Designed for continuity, flexibility, and spec-driven procurement.",
+		"regionsTitle": "Supplier footprint",
+		"regionsSubtitle": "A diversified supplier base across key global markets.",
+		"pillars": [
+			{
+				"key": "multiRegion",
+				"title": "Multi-region sourcing",
+				"description": "We source across Europe and the Americas based on destination needs.",
+				"bullets": [
+					"Origin options matched to delivery requirements",
+					"Flexible lead-time paths when needed"
+				]
+			},
+			{
+				"key": "redundancy",
+				"title": "Redundancy by design",
+				"description": "We avoid single points of failure for key categories.",
+				"bullets": [
+					"Multiple vetted sources per category",
+					"Alternatives when availability shifts"
+				]
+			},
+			{
+				"key": "spec",
+				"title": "Specification-led procurement",
+				"description": "Sourcing guided by your technical and packaging requirements.",
+				"bullets": [
+					"Grade, format, and compliance considerations",
+					"Consistency across repeat orders"
+				]
+			}
+		],
+		"regions": [
+			{
+				"key": "americas",
+				"title": "Americas",
+				"summary": "Supplier base across North and Latin America.",
+				"chips": [
+					"Canada",
+					"USA",
+					"Mexico",
+					"Panama",
+					"Brazil",
+					"Argentina"
+				]
+			},
+			{
+				"key": "europe",
+				"title": "Europe",
+				"summary": "Supplier base across Southern Europe and Turkey.",
+				"chips": [
+					"Spain",
+					"Italy",
+					"Turkey"
+				]
+			},
+			{
+				"key": "asia",
+				"title": "Asia",
+				"summary": "Supplier base in major production hubs.",
+				"chips": [
+					"India",
+					"China"
+				]
+			}
+		],
+		"proofs": [
+			{
+				"label": "Europe + the Americas + Asia",
+				"description": "Multi-region sourcing base."
+			},
+			{
+				"label": "Multiple options",
+				"description": "Redundancy per category."
+			},
+			{
+				"label": "Matched to spec",
+				"description": "Sourced to requirements + destination."
+			}
+		]
 	}
 }

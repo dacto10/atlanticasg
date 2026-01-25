@@ -119,5 +119,203 @@
 				]
 			}
 		]
+	},
+	"Industries": {
+		"kicker": "Industrias",
+		"title": "Industrias a las que servimos",
+		"subtitle": "Suministro confiable para entornos operativos exigentes.",
+		"items": [
+			{
+				"key": "agriculture",
+				"title": "Industria Agropecuaria",
+				"description": "Insumos y materiales para campo y procesado."
+			},
+			{
+				"key": "food",
+				"title": "Industria Alimentaria",
+				"description": "Packaging, higiene y esenciales de producción."
+			},
+			{
+				"key": "pharma",
+				"title": "Industria Farmacéutica",
+				"description": "Suministros trazables con requisitos estrictos."
+			},
+			{
+				"key": "cosmetics",
+				"title": "Industria Cosmética",
+				"description": "Ingredientes, envases y suministros de fabricación."
+			},
+			{
+				"key": "cleaning",
+				"title": "Industria de Limpiezas",
+				"description": "Químicos y soluciones de higiene para instalaciones."
+			},
+			{
+				"key": "marine",
+				"title": "Industria Naval",
+				"description": "Suministros de mantenimiento para puertos y flotas."
+			},
+			{
+				"key": "construction",
+				"title": "Industria de la Construcción",
+				"description": "Materiales y suministro para proyectos y obra."
+			},
+			{
+				"key": "transport",
+				"title": "Industria del Transporte",
+				"description": "Consumibles y suministros para logística."
+			},
+			{
+				"key": "energy",
+				"title": "Industria Energética",
+				"description": "Insumos industriales para operación energética."
+			}
+		]
+	},
+	"Coverage": {
+		"kicker": "Cobertura",
+		"title": "Europa + América",
+		"subtitle": "Suministro y soporte logístico en cadenas internacionales.",
+		"stats": [
+			{
+				"value": "2 continentes",
+				"label": "Europa y América"
+			},
+			{
+				"value": "Transfronterizo",
+				"label": "Documentación y coordinación"
+			},
+			{
+				"value": "Según especificación",
+				"label": "Suministro según requisitos"
+			}
+		],
+		"regionsTitle": "Regiones",
+		"capabilitiesTitle": "Cómo operamos",
+		"regions": [
+			{
+				"key": "americas",
+				"title": "América",
+				"summary": "Soporte integral en todo el continente.",
+				"items": [
+					"Norteamérica",
+					"Centroamérica",
+					"Sudamérica"
+				]
+			},
+			{
+				"key": "europe",
+				"title": "Europa",
+				"summary": "Cobertura operativa en mercados europeos clave.",
+				"items": [
+					"UE",
+					"Reino Unido",
+					"Mercados cercanos"
+				]
+			}
+		],
+		"capabilities": [
+			{
+				"key": "docs",
+				"title": "Documentación y cumplimiento",
+				"description": "Documentación de exportación, soporte básico de aduanas y trámites."
+			},
+			{
+				"key": "consolidation",
+				"title": "Consolidación y coordinación",
+				"description": "Búsqueda de proveedores, consolidación y planificación de envíos."
+			},
+			{
+				"key": "freight",
+				"title": "Opciones de transporte",
+				"description": "Marítimo, aéreo y multimodal según plazos y destino."
+			}
+		]
+	},
+	"Providers": {
+		"kicker": "Red",
+		"title": "Red global de abastecimiento",
+		"subtitle": "Protegemos tu suministro con redundancia y abastecimiento multi-región, sin exponer proveedores concretos.",
+		"pillarsTitle": "Cómo funciona la red",
+		"pillarsSubtitle": "Diseñada para continuidad, flexibilidad y compra según especificación.",
+		"regionsTitle": "Origen de proveedores",
+		"regionsSubtitle": "Base diversificada de proveedores en mercados clave.",
+		"pillars": [
+			{
+				"key": "multiRegion",
+				"title": "Abastecimiento multi-región",
+				"description": "Origen en Europa y América según destino y necesidades.",
+				"bullets": [
+					"Opciones de origen adaptadas a la entrega",
+					"Rutas y plazos flexibles cuando se necesita"
+				]
+			},
+			{
+				"key": "redundancy",
+				"title": "Redundancia por diseño",
+				"description": "Evitamos puntos únicos de fallo en categorías clave.",
+				"bullets": [
+					"Múltiples fuentes validadas por categoría",
+					"Alternativas ante cambios de disponibilidad"
+				]
+			},
+			{
+				"key": "spec",
+				"title": "Compra según especificación",
+				"description": "Abastecimiento guiado por requisitos técnicos y de embalaje.",
+				"bullets": [
+					"Grado, formato y consideraciones de cumplimiento",
+					"Consistencia en pedidos recurrentes"
+				]
+			}
+		],
+		"regions": [
+			{
+				"key": "americas",
+				"title": "América",
+				"summary": "Base de proveedores en Norte y Latinoamérica.",
+				"chips": [
+					"Canadá",
+					"EE. UU.",
+					"México",
+					"Panamá",
+					"Brasil",
+					"Argentina"
+				]
+			},
+			{
+				"key": "europe",
+				"title": "Europa",
+				"summary": "Base de proveedores en el sur de Europa y Turquía.",
+				"chips": [
+					"España",
+					"Italia",
+					"Turquía"
+				]
+			},
+			{
+				"key": "asia",
+				"title": "Asia",
+				"summary": "Base de proveedores en hubs de producción.",
+				"chips": [
+					"India",
+					"China"
+				]
+			}
+		],
+		"proofs": [
+			{
+				"label": "Europa + América + Asia",
+				"description": "Base de origen multi-región."
+			},
+			{
+				"label": "Múltiples opciones",
+				"description": "Redundancia por categoría."
+			},
+			{
+				"label": "Según especificación",
+				"description": "Origen según requisitos + destino."
+			}
+		]
 	}
 }
