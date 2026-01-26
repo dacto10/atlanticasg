@@ -15,7 +15,6 @@ type Stat = { value: string; label: string };
 type Region = { key: string; title: string; summary: string; items: string[] };
 type Capability = { key: string; title: string; description: string };
 
-
 export async function CoverageSection() {
 	const t = await getTranslations("Coverage");
 

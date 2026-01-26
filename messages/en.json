@@ -317,5 +317,90 @@
 				"description": "Sourced to requirements + destination."
 			}
 		]
+	},
+	"Allies": {
+		"kicker": "Allies",
+		"title": "Main Allies",
+		"subtitle": "We partner with trusted manufacturers to deliver verified product lines and regional support.",
+		"spotlightLabel": "Featured alliance",
+		"items": [
+			{
+				"key": "kliner",
+				"name": "Kliner Profesional",
+				"headline": "Official distributor",
+				"description": "ASG is the official distributor of Kliner Profesional for Central America and the Caribbean, bringing its portfolio of industrial cleaning solutions to the region.",
+				"regionsLabel": "Territory",
+				"regions": [
+					"Central America",
+					"Caribbean"
+				],
+				"primaryCtaLabel": "View product catalog",
+				"primaryCtaHref": "#",
+				"secondaryCtaLabel": "Read announcement (original)",
+				"secondaryCtaHref": "#",
+				"disclaimer": "Announcement published before our rebrand."
+			}
+		]
+	},
+	"Testimonials": {
+		"kicker": "Testimonials",
+		"title": "Trusted by teams across the Americas and Europe",
+		"subtitle": "A few words from clients we’ve supported with specification-led sourcing and reliable delivery.",
+		"items": [
+			{
+				"quote": "Excellent service and product quality.",
+				"company": "MEJSA",
+				"region": "LATAM",
+				"industry": "Industrial supply"
+			},
+			{
+				"quote": "A reliable and committed supplier.",
+				"company": "Trading Fonteius",
+				"region": "LATAM",
+				"industry": "Industrial supply"
+			},
+			{
+				"quote": "High quality products and timely delivery.",
+				"company": "North World Industry",
+				"region": "NA",
+				"industry": "Industrial supply"
+			},
+			{
+				"quote": "They exceeded our expectations.",
+				"company": "Sum Hidra",
+				"region": "EU",
+				"industry": "Industrial supply"
+			}
+		]
+	},
+	"Contact": {
+		"kicker": "Contact",
+		"title": "Request a quote",
+		"subtitle": "Send specs and destination. We’ll confirm availability and lead times.",
+		"channelsPill": "Direct channels",
+		"channelsTitle": "Reach us directly",
+		"channelsSubtitle": "Use the channel that fits your workflow. We’ll respond as quickly as possible.",
+		"channels": {
+			"whatsappLabel": "WhatsApp",
+			"whatsappDescription": "Fastest for quick questions, specs, and follow-ups.",
+			"whatsappCta": "Message",
+			"whatsappHref": "https://wa.me/15551234567?text=Hi%20ASG%2C%20I%E2%80%99d%20like%20to%20request%20a%20quote.",
+			"emailLabel": "Email",
+			"emailDescription": "Best for formal requests and documentation-heavy orders.",
+			"emailCta": "Email",
+			"emailHref": "mailto:sales@example.com?subject=Quote%20request%20(ASG)"
+		},
+		"note": "Tip: include product specs, quantity, and delivery destination for faster turnaround.",
+		"formTitle": "Send a request",
+		"formSubtitle": "Prefer forms? Fill this out and we’ll get back to you.",
+		"form": {
+			"name": "Name",
+			"company": "Company",
+			"email": "Email",
+			"phone": "Phone / WhatsApp (optional)",
+			"message": "Details / Specifications",
+			"helper": "Examples: product, grade, quantity, packaging, delivery destination, required documents.",
+			"submit": "Send request"
+		}
 	}
 }

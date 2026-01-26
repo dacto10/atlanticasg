@@ -6,7 +6,9 @@ const ProductsSection = dynamic(async () => (await import("@/components/sections
 const IndustriesSection = dynamic(async () => (await import("@/components/sections/industries")).IndustriesSection)
 const CoverageSection = dynamic(async () => (await import("@/components/sections/coverage")).CoverageSection)
 const ProvidersSection = dynamic(async () => (await import("@/components/sections/providers")).ProvidersSection)
-
+const AlliesSection = dynamic(async () => (await import("@/components/sections/allies")).AlliesSection)
+const TestimonialsSection = dynamic(async () => (await import("@/components/sections/testimonials")).TestimonialsSection)
+const ContactSection = dynamic(async () => (await import("@/components/sections/contact")).ContactSection)
 
 export default function HomePage() {
 	return (
@@ -18,6 +20,9 @@ export default function HomePage() {
 				<IndustriesSection />
 				<CoverageSection />
 				<ProvidersSection />
+				<AlliesSection />
+				<TestimonialsSection />
+				<ContactSection />
 			</main>
 		</>
 	);

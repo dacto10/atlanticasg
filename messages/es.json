@@ -317,5 +317,90 @@
 				"description": "Origen según requisitos + destino."
 			}
 		]
+	},
+	"Allies": {
+		"kicker": "Aliados",
+		"title": "Aliados principales",
+		"subtitle": "Colaboramos con fabricantes confiables para ofrecer líneas verificadas y soporte regional.",
+		"spotlightLabel": "Alianza destacada",
+		"items": [
+			{
+				"key": "kliner",
+				"name": "Kliner Profesional",
+				"headline": "Distribuidor oficial",
+				"description": "ASG es el distribuidor oficial de Kliner Profesional para Centroamérica y el Caribe, llevando su portafolio de soluciones de limpieza industrial a la región.",
+				"regionsLabel": "Territorio",
+				"regions": [
+					"Centroamérica",
+					"Caribe"
+				],
+				"primaryCtaLabel": "Ver catálogo de productos",
+				"primaryCtaHref": "#",
+				"secondaryCtaLabel": "Leer anuncio (original)",
+				"secondaryCtaHref": "#",
+				"disclaimer": "El anuncio fue publicado antes de nuestro rebranding."
+			}
+		]
+	},
+	"Testimonials": {
+		"kicker": "Testimonios",
+		"title": "Equipos en América y Europa confían en nosotros",
+		"subtitle": "Algunas palabras de clientes a los que hemos apoyado con abastecimiento guiado por especificaciones y entregas confiables.",
+		"items": [
+			{
+				"quote": "Excelente servicio y calidad de producto.",
+				"company": "MEJSA",
+				"region": "LATAM",
+				"industry": "Suministro industrial"
+			},
+			{
+				"quote": "Un proveedor confiable y comprometido.",
+				"company": "Trading Fonteius",
+				"region": "LATAM",
+				"industry": "Suministro industrial"
+			},
+			{
+				"quote": "Productos de alta calidad y entregas a tiempo.",
+				"company": "North World Industry",
+				"region": "NA",
+				"industry": "Suministro industrial"
+			},
+			{
+				"quote": "Superaron nuestras expectativas.",
+				"company": "Sum Hidra",
+				"region": "EU",
+				"industry": "Suministro industrial"
+			}
+		]
+	},
+	"Contact": {
+		"kicker": "Contacto",
+		"title": "Solicitar cotización",
+		"subtitle": "Envíanos especificaciones y destino. Confirmamos disponibilidad y tiempos de entrega.",
+		"channelsPill": "Canales directos",
+		"channelsTitle": "Contáctanos directamente",
+		"channelsSubtitle": "Usa el canal que mejor te funcione. Responderemos lo antes posible.",
+		"channels": {
+			"whatsappLabel": "WhatsApp",
+			"whatsappDescription": "Más rápido para dudas, especificaciones y seguimiento.",
+			"whatsappCta": "Escribir",
+			"whatsappHref": "https://wa.me/15551234567?text=Hola%20ASG%2C%20quisiera%20solicitar%20una%20cotizaci%C3%B3n.",
+			"emailLabel": "Correo",
+			"emailDescription": "Ideal para solicitudes formales y pedidos con documentación.",
+			"emailCta": "Enviar",
+			"emailHref": "mailto:ventas@example.com?subject=Solicitud%20de%20cotizaci%C3%B3n%20(ASG)"
+		},
+		"note": "Tip: incluye especificaciones, cantidad y destino para agilizar la respuesta.",
+		"formTitle": "Enviar solicitud",
+		"formSubtitle": "Si prefieres un formulario, completa esto y te contactamos.",
+		"form": {
+			"name": "Nombre",
+			"company": "Empresa",
+			"email": "Correo",
+			"phone": "Teléfono / WhatsApp (opcional)",
+			"message": "Detalles / Especificaciones",
+			"helper": "Ejemplos: producto, grado, cantidad, empaque, destino, documentos requeridos.",
+			"submit": "Enviar solicitud"
+		}
 	}
 }
