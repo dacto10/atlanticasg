@@ -400,7 +400,12 @@
 			"phone": "Phone / WhatsApp (optional)",
 			"message": "Details / Specifications",
 			"helper": "Examples: product, grade, quantity, packaging, delivery destination, required documents.",
-			"submit": "Send request"
+			"submit": "Send request",
+			"status": {
+				"success": "Thanks, we got your request. We'll reply shortly.",
+				"invalid": "Please check the fields and try again.",
+				"error": "Something went wrong sending your message. Please use email or WhatsApp."
+			}
 		}
 	}
 }

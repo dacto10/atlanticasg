@@ -400,7 +400,12 @@
 			"phone": "Teléfono / WhatsApp (opcional)",
 			"message": "Detalles / Especificaciones",
 			"helper": "Ejemplos: producto, grado, cantidad, empaque, destino, documentos requeridos.",
-			"submit": "Enviar solicitud"
+			"submit": "Enviar solicitud",
+			"status": {
+				"success": "Gracias, hemos recibido tu solicitud. Te responderemos en breve.",
+				"invalid": "Revisa los campos y vuelve a intentarlo.",
+				"error": "Hubo un problema al enviar el mensaje. Usa email o WhatsApp."
+			}
 		}
 	}
 }

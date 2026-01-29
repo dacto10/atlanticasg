@@ -10,7 +10,11 @@ const AlliesSection = dynamic(async () => (await import("@/components/sections/a
 const TestimonialsSection = dynamic(async () => (await import("@/components/sections/testimonials")).TestimonialsSection)
 const ContactSection = dynamic(async () => (await import("@/components/sections/contact")).ContactSection)
 
-export default function HomePage() {
+export default function HomePage({
+	searchParams,
+}: {
+	searchParams: { contact?: "success" | "invalid" | "error" };
+}) {
 	return (
 		<>
 			<Navbar />
@@ -22,7 +26,7 @@ export default function HomePage() {
 				<ProvidersSection />
 				<AlliesSection />
 				<TestimonialsSection />
-				<ContactSection />
+				<ContactSection status={searchParams.contact} />
 			</main>
 		</>
 	);

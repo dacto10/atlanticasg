@@ -1,3 +1,4 @@
+import * as React from "react";
 import { getTranslations } from "next-intl/server";
 import { Section } from "@/components/layout/Section";
 import { SectionHeader } from "@/components/layout/SectionHeader";
@@ -22,11 +23,29 @@ function isExternal(href: string) {
 	return /^https?:\/\//i.test(href);
 }
 
-export async function ContactSection() {
+type ContactStatus = "success" | "invalid" | "error";
+
+export async function ContactSection({
+	status,
+}: {
+	status?: ContactStatus;
+}) {
 	const t = await getTranslations("Contact");
 
 	const whatsappHref = t("channels.whatsappHref");
 	const emailHref = t("channels.emailHref");
+
+	const statusText =
+		status === "success"
+			? t("form.status.success")
+			: status === "invalid"
+				? t("form.status.invalid")
+				: status === "error"
+					? t("form.status.error")
+					: null;
+
+	const statusTone =
+		status === "success" ? "text-foreground" : "text-destructive";
 
 	return (
 		<Section id="contact">
@@ -173,13 +192,33 @@ export async function ContactSection() {
 											</div>
 										</div>
 
-										<form className="mt-6 grid gap-4">
+										{statusText && (
+											<div className={`mt-4 text-sm ${statusTone}`} role="status">
+												{statusText}
+											</div>
+										)}
+
+										<form action="/api/contact" method="post" className="mt-6 grid gap-4">
+											{/* Honeypot (do not translate, do not style it pretty, do not acknowledge it) */}
+											<input
+												type="text"
+												name="website"
+												tabIndex={-1}
+												autoComplete="off"
+												aria-hidden="true"
+												className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden"
+											/>
+
 											<div className="grid gap-4 sm:grid-cols-2">
 												<div className="grid gap-2">
 													<Label htmlFor="name">{t("form.name")}</Label>
 													<Input
 														id="name"
 														name="name"
+														required
+														minLength={2}
+														maxLength={120}
+														autoComplete="name"
 														className="rounded-2xl bg-background/30 border-border/60 focus-visible:ring-primary/25"
 													/>
 												</div>
@@ -189,6 +228,8 @@ export async function ContactSection() {
 													<Input
 														id="company"
 														name="company"
+														maxLength={120}
+														autoComplete="organization"
 														className="rounded-2xl bg-background/30 border-border/60 focus-visible:ring-primary/25"
 													/>
 												</div>
@@ -201,6 +242,9 @@ export async function ContactSection() {
 														id="email"
 														name="email"
 														type="email"
+														required
+														maxLength={254}
+														autoComplete="email"
 														className="rounded-2xl bg-background/30 border-border/60 focus-visible:ring-primary/25"
 													/>
 												</div>
@@ -210,6 +254,8 @@ export async function ContactSection() {
 													<Input
 														id="phone"
 														name="phone"
+														maxLength={40}
+														autoComplete="tel"
 														className="rounded-2xl bg-background/30 border-border/60 focus-visible:ring-primary/25"
 													/>
 												</div>
@@ -220,13 +266,16 @@ export async function ContactSection() {
 												<Textarea
 													id="message"
 													name="message"
+													required
+													minLength={10}
+													maxLength={2000}
 													rows={5}
 													className="rounded-2xl bg-background/30 border-border/60 focus-visible:ring-primary/25"
 												/>
 												<p className="text-xs text-muted-foreground">{t("form.helper")}</p>
 											</div>
 
-											<Button type="button" className="inline-flex items-center gap-2">
+											<Button type="submit" className="inline-flex items-center gap-2">
 												<Send className="h-4 w-4" />
 												{t("form.submit")}
 											</Button>
