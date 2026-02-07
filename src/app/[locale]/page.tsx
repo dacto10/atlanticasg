@@ -9,12 +9,15 @@ const ProvidersSection = dynamic(async () => (await import("@/components/section
 const AlliesSection = dynamic(async () => (await import("@/components/sections/allies")).AlliesSection)
 const TestimonialsSection = dynamic(async () => (await import("@/components/sections/testimonials")).TestimonialsSection)
 const ContactSection = dynamic(async () => (await import("@/components/sections/contact")).ContactSection)
+const Footer = dynamic(async () => (await import("@/components/navigation/Footer")).Footer)
 
-export default function HomePage({
+export default async function HomePage({
 	searchParams,
 }: {
-	searchParams: { contact?: "success" | "invalid" | "error" };
+	searchParams: Promise<{ contact?: "success" | "invalid" | "error" }>;
 }) {
+	const { contact } = await searchParams;
+
 	return (
 		<>
 			<Navbar />
@@ -26,8 +29,9 @@ export default function HomePage({
 				<ProvidersSection />
 				<AlliesSection />
 				<TestimonialsSection />
-				<ContactSection status={searchParams.contact} />
+				<ContactSection status={contact} />
 			</main>
+			<Footer />
 		</>
 	);
 }

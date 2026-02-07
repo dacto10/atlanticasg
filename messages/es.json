@@ -1,7 +1,4 @@
 {
-	"Data": {
-		"brand": "ASG"
-	},
 	"Nav": {
 		"products": "Productos",
 		"industries": "Industrias",
@@ -14,7 +11,7 @@
 	},
 	"Hero": {
 		"kicker": "Suministro y Distribución Industrial",
-		"title": "Suministros industriales en Latinoamérica y el Caribe.",
+		"title": "Suministros industriales para Europa y América.",
 		"subtitle": "Materias primas, productos de limpieza industrial, metales y equipos. Precios competitivos, abastecimiento confiable y entregas a tiempo.",
 		"actions": {
 			"quote": "Solicitar cotización",
@@ -36,7 +33,7 @@
 			{
 				"key": "coverage",
 				"title": "Cobertura",
-				"description": "Latinoamérica y el Caribe, con red global de proveedores."
+				"description": "Europa y América, con red global de proveedores."
 			},
 			{
 				"key": "logistics",
@@ -407,5 +404,42 @@
 				"error": "Hubo un problema al enviar el mensaje. Usa email o WhatsApp."
 			}
 		}
+	},
+	"Footer": {
+		"tagline": "Abastecimiento basado en especificaciones para América y Europa.",
+		"builtFor": "Cotizaciones rápidas. Proveedores fiables.",
+		"sections": "Secciones",
+		"connect": "Contacto",
+		"nav": {
+			"hero": "Inicio",
+			"products": "Productos",
+			"industries": "Industrias",
+			"coverage": "Cobertura",
+			"providers": "Red",
+			"testimonials": "Testimonios",
+			"allies": "Alianzas",
+			"contact": "Contacto"
+		},
+		"social": {
+			"email": "Email",
+			"whatsapp": "WhatsApp",
+			"quote": "Solicitar cotización"
+		},
+		"backToTop": "Volver arriba",
+		"copyright": "© {year} {name}. Todos los derechos reservados.",
+		"credit": "Hecho por <author>{name}</author>"
+	},
+	"Data": {
+		"brand": "ASG",
+		"brandFull": "Atlantica Supplies Group",
+		"email": "ventas@asg.example",
+		"whatsappHref": "https://wa.me/34XXXXXXXXX",
+		"authorName": "Darío Ruiz",
+		"authorUrl": "https://darioruiz.dev"
+	},
+	"Metadata": {
+		"title": "Atlantica Supplies Group",
+		"titleSuffix": "Suministros industriales para Europa y América",
+		"description": "Suministros industriales para Europa y América. Materias primas, productos de limpieza industrial, metales, materiales y equipos. Abastecimiento por especificación, precios competitivos y entrega coordinada."
 	}
 }

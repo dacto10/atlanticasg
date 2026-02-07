@@ -156,9 +156,9 @@ export async function ContactSection({
 								</div>
 							</Reveal>
 
-							<Reveal delayMs={200}>
-								<div className="rounded-3xl p-px bg-gradient-to-b from-border/80 via-border/35 to-border/80">
-									<div className="relative overflow-hidden rounded-3xl bg-card/55 p-6 ring-1 ring-inset ring-white/5 sm:p-7">
+							<Reveal delayMs={200} className="h-full">
+								<div className="rounded-3xl p-px bg-gradient-to-b from-border/80 via-border/35 to-border/80  h-full">
+									<div className="relative overflow-hidden rounded-3xl bg-card/55 p-6 ring-1 ring-inset ring-white/5 sm:p-7 h-full">
 										<div className="pointer-events-none absolute -left-24 -bottom-24 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
 
 										<div className="flex items-start justify-between gap-4">
@@ -198,8 +198,7 @@ export async function ContactSection({
 											</div>
 										)}
 
-										<form action="/api/contact" method="post" className="mt-6 grid gap-4">
-											{/* Honeypot (do not translate, do not style it pretty, do not acknowledge it) */}
+										<form action="/api/contact" method="post" className="mt-8 grid gap-4">
 											<input
 												type="text"
 												name="website"

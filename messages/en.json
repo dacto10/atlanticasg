@@ -1,7 +1,4 @@
 {
-	"Data": {
-		"brand": "ASG"
-	},
 	"Nav": {
 		"products": "Products",
 		"industries": "Industries",
@@ -14,7 +11,7 @@
 	},
 	"Hero": {
 		"kicker": "Industrial Supply & Distribution",
-		"title": "Industrial supplies across Latin America & the Caribbean.",
+		"title": "Industrial supplies across Europe and the Americas.",
 		"subtitle": "Raw materials, industrial cleaning products, metals, and equipment. Competitive pricing, reliable sourcing, and timely delivery.",
 		"actions": {
 			"quote": "Request a quote",
@@ -36,7 +33,7 @@
 			{
 				"key": "coverage",
 				"title": "Coverage",
-				"description": "Latin America & the Caribbean, with a global supplier network."
+				"description": "Europe and the Americas, with a global supplier network."
 			},
 			{
 				"key": "logistics",
@@ -407,5 +404,42 @@
 				"error": "Something went wrong sending your message. Please use email or WhatsApp."
 			}
 		}
+	},
+	"Footer": {
+		"tagline": "Specification-led sourcing across the Americas and Europe.",
+		"builtFor": "Fast quotes. Reliable suppliers.",
+		"sections": "Sections",
+		"connect": "Connect",
+		"nav": {
+			"hero": "Home",
+			"products": "Products",
+			"industries": "Industries",
+			"coverage": "Coverage",
+			"providers": "Network",
+			"testimonials": "Testimonials",
+			"allies": "Allies",
+			"contact": "Contact"
+		},
+		"social": {
+			"email": "Email",
+			"whatsapp": "WhatsApp",
+			"quote": "Request a quote"
+		},
+		"backToTop": "Back to top",
+		"copyright": "© {year} {name}. All rights reserved.",
+		"credit": "Made by <author>{name}</author>"
+	},
+	"Data": {
+		"brand": "ASG",
+		"brandFull": "Atlantica Supplies Group",
+		"email": "sales@asg.example",
+		"whatsappHref": "https://wa.me/34XXXXXXXXX",
+		"authorName": "Darío Ruiz",
+		"authorUrl": "https://darioruiz.dev"
+	},
+	"Metadata": {
+		"title": "Atlantica Supplies Group",
+		"titleSuffix": "Industrial supplies for Europe and the Americas",
+		"description": "Industrial supplies for Europe and the Americas. Raw materials, industrial cleaning products, metals, and equipment. Specification-led sourcing, competitive pricing, and coordinated delivery."
 	}
 }

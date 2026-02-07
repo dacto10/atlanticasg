@@ -1,67 +1,111 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
-import "@/app/globals.css";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { routing } from "@/i18n/routing";
-import { setRequestLocale, getMessages, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { ThemeProvider } from "@/provider/theme";
+import type { Metadata } from "next"
+import { Plus_Jakarta_Sans } from "next/font/google"
+import "@/app/globals.css"
+
+import { hasLocale, NextIntlClientProvider } from "next-intl"
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
+import { notFound } from "next/navigation"
+
+import { routing } from "@/i18n/routing"
+import { ThemeProvider } from "@/provider/theme"
+import { GlobalBackground } from "@/components/ui/background"
 
 const jakarta = Plus_Jakarta_Sans({
 	subsets: ["latin"],
 	variable: "--font-sans",
-	display: "swap",
-});
+	display: "swap"
+})
 
-// export async function generateMetadata({
-// 	params,
-// }: {
-// 	params: Promise<{ locale: string }>;
-// }): Promise<Metadata> {
-// 	const { locale } = await params;
-// 	if (!hasLocale(routing.locales, locale)) notFound();
+function getBaseUrl() {
+	const raw = process.env.NEXT_PUBLIC_SITE_URL
+	return raw ? new URL(raw) : new URL("http://localhost:3000")
+}
 
-// 	const t = await getTranslations({ locale, namespace: "Metadata" });
+export async function generateMetadata({
+	params
+}: {
+	params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+	const { locale } = await params
+	if (!hasLocale(routing.locales, locale)) notFound()
 
-// 	const title = t("title");
-// 	const description = t("description");
+	const t = await getTranslations({ locale, namespace: "Metadata" })
+	const baseUrl = getBaseUrl()
 
-// 	return {
-// 		title: { default: title, template: `%s | ${title}` },
-// 		description,
-// 		openGraph: { title, description, locale },
-// 		twitter: { card: "summary_large_image", title, description },
-// 	};
-// }
+	const title = t("title")
+	const titleSuffix = t("titleSuffix")
+	const description = t("description")
+
+	const url = new URL(`/${locale}`, baseUrl)
+
+	const languages = Object.fromEntries(
+		routing.locales.map((l) => [l, new URL(`/${l}`, baseUrl).toString()])
+	)
+
+	return {
+		metadataBase: baseUrl,
+		title: `${title} | ${titleSuffix}`,
+		description,
+		alternates: {
+			canonical: url.toString(),
+			languages
+		},
+		openGraph: {
+			type: "website",
+			url: url.toString(),
+			title,
+			description,
+			siteName: title,
+			locale,
+		},
+		twitter: {
+			card: "summary_large_image",
+			title,
+			description
+		},
+		robots: {
+			index: true,
+			follow: true
+		},
+		icons: {
+			icon: "/favicon.ico"
+		}
+	}
+}
+
+export function generateStaticParams() {
+	return routing.locales.map((locale) => ({ locale }))
+}
 
 export default async function RootLayout({
 	children,
-	params,
+	params
 }: Readonly<{
-	children: React.ReactNode;
-	params: Promise<{ locale: string }>;
+	children: React.ReactNode
+	params: Promise<{ locale: string }>
 }>) {
-	const { locale } = await params;
-	if (!hasLocale(routing.locales, locale)) notFound();
+	const { locale } = await params
+	if (!hasLocale(routing.locales, locale)) notFound()
 
-	setRequestLocale(locale);
-	const messages = await getMessages();
+	setRequestLocale(locale)
+	const messages = await getMessages()
 
 	return (
-		<html lang={locale} suppressHydrationWarning>
-			<body className={`${jakarta.variable} font-[var(--font-sans)] antialiased min-h-dvh`}>
+		<html lang={locale} suppressHydrationWarning className={jakarta.variable}>
+			<body className="min-h-dvh bg-background font-[var(--font-sans)] antialiased text-foreground">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
-					enableColorScheme={false}
+					enableColorScheme
 				>
-					<NextIntlClientProvider messages={messages}>
-						{children}
+					<NextIntlClientProvider locale={locale} messages={messages}>
+						<GlobalBackground />
+						<div className="relative z-10">{children}</div>
 					</NextIntlClientProvider>
 				</ThemeProvider>
 			</body>
 		</html>
-	);
+	)
 }

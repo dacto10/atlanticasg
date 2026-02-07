@@ -16,7 +16,7 @@ export async function Navbar() {
 	return (
 		<NavbarClient
 			items={items}
-			brand={data("brand")}
+			brand={data("brandFull")}
 			cta={{ href: sectionHref("contact"), label: nav("quote") }}
 		/>
 	);

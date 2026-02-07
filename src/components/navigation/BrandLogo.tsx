@@ -1,10 +1,9 @@
 import Image from "next/image";
-import * as React from "react";
 
 export function BrandLogo({
 	name,
 	className,
-	width = 140,
+	width = 105,
 	height = 28
 }: {
 	name: string;
@@ -17,8 +16,8 @@ export function BrandLogo({
 			<span className="sr-only">{name}</span>
 
 			<Image
-				src="/brand/logo-primary.svg"
-				alt=""
+				src="/asg-secondary.svg"
+				alt="Atlantica Supplies Group"
 				aria-hidden="true"
 				width={width}
 				height={height}
@@ -27,14 +26,14 @@ export function BrandLogo({
 			/>
 
 			<Image
-				src="/brand/logo-white.svg"
-				alt=""
+				src="/asg-secondary-white.svg"
+				alt="Atlantica Supplies Group"
 				aria-hidden="true"
 				width={width}
 				height={height}
 				className="hidden dark:block"
 				draggable={false}
 			/>
-		</span>
+			</span>
 	);
 }

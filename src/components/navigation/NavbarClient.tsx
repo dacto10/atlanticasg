@@ -14,6 +14,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { ThemeToggle } from "@/components/navigation/ThemeToggle";
 import { LocaleDropdown } from "@/components/navigation/LocaleDropdown";
+import { BrandLogo } from "./BrandLogo";
 
 type NavItem = { href: string; label: string };
 type Cta = { href: string; label: string };
@@ -30,21 +31,21 @@ export function NavbarClient({
 	return (
 		<header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
 			<div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4">
-				<Link
+				{/* <Link
 					href="/"
 					className="flex items-center gap-2 font-semibold tracking-tight hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
 				>
 					{brand}
-				</Link>
+				</Link> */}
 
-				{/* <Link
+				<Link
 						href="/"
 						className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
 					>
 						<BrandLogo name={brand} className="leading-none" />
-					</Link> */}
+					</Link>
 
-				<nav className="hidden items-center gap-4 md:flex" aria-label="Primary">
+				<nav className="hidden items-center gap-4 lg:flex" aria-label="Primary">
 					<ul className="flex items-center gap-1">
 						{items.map((item) => (
 							<li key={item.href}>
@@ -71,7 +72,7 @@ export function NavbarClient({
 					</Button>
 				</nav>
 
-				<div className="flex items-center gap-2 md:hidden">
+				<div className="flex items-center gap-2 lg:hidden">
 					<ThemeToggle />
 					<LocaleDropdown />
 

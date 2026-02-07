@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
 import { Section } from "@/components/layout/Section";
@@ -106,7 +105,7 @@ export async function AlliesSection() {
 
 										<div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
 											<Button asChild>
-												<Link
+												<a
 													href={spotlight.primaryCtaHref}
 													target={isExternal(spotlight.primaryCtaHref) ? "_blank" : undefined}
 													rel={isExternal(spotlight.primaryCtaHref) ? "noreferrer" : undefined}
@@ -114,12 +113,12 @@ export async function AlliesSection() {
 												>
 													{spotlight.primaryCtaLabel}
 													<ArrowUpRight className="h-4 w-4" />
-												</Link>
+												</a>
 											</Button>
 
 											{spotlight.secondaryCtaLabel && spotlight.secondaryCtaHref ? (
 												<Button variant="outline" asChild>
-													<Link
+													<a
 														href={spotlight.secondaryCtaHref}
 														target={isExternal(spotlight.secondaryCtaHref) ? "_blank" : undefined}
 														rel={isExternal(spotlight.secondaryCtaHref) ? "noreferrer" : undefined}
@@ -127,7 +126,7 @@ export async function AlliesSection() {
 													>
 														{spotlight.secondaryCtaLabel}
 														<ArrowUpRight className="h-4 w-4" />
-													</Link>
+													</a>
 												</Button>
 											) : null}
 										</div>
@@ -167,7 +166,7 @@ export async function AlliesSection() {
 
 										<div className="mt-6 flex flex-col gap-3 sm:flex-row">
 											<Button asChild>
-												<Link
+												<a
 													href={a.primaryCtaHref}
 													target={isExternal(a.primaryCtaHref) ? "_blank" : undefined}
 													rel={isExternal(a.primaryCtaHref) ? "noreferrer" : undefined}
@@ -175,12 +174,12 @@ export async function AlliesSection() {
 												>
 													{a.primaryCtaLabel}
 													<ArrowUpRight className="h-4 w-4" />
-												</Link>
+												</a>
 											</Button>
 
 											{a.secondaryCtaLabel && a.secondaryCtaHref ? (
 												<Button variant="outline" asChild>
-													<Link
+													<a
 														href={a.secondaryCtaHref}
 														target={isExternal(a.secondaryCtaHref) ? "_blank" : undefined}
 														rel={isExternal(a.secondaryCtaHref) ? "noreferrer" : undefined}
@@ -188,7 +187,7 @@ export async function AlliesSection() {
 													>
 														{a.secondaryCtaLabel}
 														<ArrowUpRight className="h-4 w-4" />
-													</Link>
+													</a>
 												</Button>
 											) : null}
 										</div>

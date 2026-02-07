@@ -60,7 +60,7 @@ export async function TestimonialsSection() {
 										</div>
 
 										<div className="flex h-full flex-col">
-											<blockquote className="text-sm leading-relaxed text-foreground/90 sm:text-base italic">
+											<blockquote className="text-sm leading-relaxed text-foreground/90 sm:text-base italic pr-6">
 												<span className="text-muted-foreground">“</span>
 												{item.quote}
 												<span className="text-muted-foreground">”</span>
